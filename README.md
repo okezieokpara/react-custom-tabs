@@ -1,16 +1,11 @@
 react-custom-tabs
 =================
 
->   TODO: Component Description
-
-<https://www.npmjs.com/package/react-modern-library-boilerplate>
-<https://standardjs.com>
-
 Install
 -------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-npm install --save 
+npm install react-custom-tabs --save 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Usage
@@ -18,13 +13,22 @@ Usage
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ jsx
 import React, { Component } from 'react'
-
-import MyComponent from 'react-modern-library-component'
+import {Tab, Tablist} from 'react-custom-tabs';
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Tablist>
+         <Tab tabTitle="First tab" >
+             <h3>Tab content 1</h3>
+         </Tab>
+       <Tab tabTitle="Second Tab">
+         <h3>Tab content 2</h3>
+       </Tab>
+       <Tab tabTitle="Third Tab">
+         <h3>Tab content 2</h3>
+       </Tab>
+     </Tablist>
     )
   }
 }
