@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/okezieokpara/react-custom-tabs.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -31,15 +31,16 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-config-xo-space": "^0.15.0",
     "gh-pages": "^1.1.0",
     "rollup": "^0.54.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.1",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
-    "rollup-plugin-postcss": "^1.1.0",
-    "eslint-config-xo-react": "^0.10.0",
-    "eslint-config-xo-space": "^0.15.0"
+    "rollup-plugin-postcss": "^1.1.0"
   },
   "eslintConfig": {
     "root": true,

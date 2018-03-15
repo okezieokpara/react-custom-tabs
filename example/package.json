@@ -1,6 +1,6 @@
 {
   "name": "custom-react-app-example",
-  "homepage": "https://okezieokpara.github.io/custom-react-app-example",
+  "homepage": "https://okezieokpara.github.io/react-custom-tabs",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -8,6 +8,7 @@
     "bootstrap": "^4.0.0",
     "prop-types": "^15.4.4",
     "react": "^16.2.0",
+    "react-custom-tabs": "^1.0.0-beta",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0"
   },

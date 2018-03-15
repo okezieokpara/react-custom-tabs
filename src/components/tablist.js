@@ -19,7 +19,6 @@ class Tablist extends Component {
     }
 
     const currentActiveTab = this.getActiveTab();
-    console.log(currentActiveTab);
     if (currentActiveTab.props.onDeactivate) {
       currentActiveTab.props.onDeactivate(this.state.activeTabIndex, currentActiveTab.props.id);
     }

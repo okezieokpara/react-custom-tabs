@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/custom.css';
 import {Tab, Tablist} from 'react-custom-tabs';
+import {PillsTablistTemplate, PillsTabTemplate} from './components/tabTemplates';
 import {NavHeader} from './components/navHeader';
 
 export default class App extends Component {
@@ -15,17 +16,38 @@ export default class App extends Component {
             <h1>Demonstrates React Custom Tabs</h1>
             <p className="lead">This is a demo for react custom tabs</p>
           </div>
-          <section>
+          <section className="container">
             <h3>Default -<small className="text-muted">Uses bootstrap</small></h3>
             <Tablist>
               <Tab tabTitle="First tab" >
                 <h3>Tab content 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </Tab>
               <Tab tabTitle="Second Tab">
                 <h3>Tab content 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </Tab>
               <Tab tabTitle="Third Tab">
-                <hh3>Tab content 2</hh3>
+                <h3>Tab content 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </Tab>
+            </Tablist>
+          </section>
+          <hr/>
+          <section className="container">
+            <h3>Pill Template</h3>
+            <Tablist template={PillsTablistTemplate}>
+              <Tab tabTitle="First tab" tabTemplate={PillsTabTemplate}>
+                <h3>Tab content 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </Tab>
+              <Tab tabTitle="Second Tab" tabTemplate={PillsTabTemplate}>
+                <h3>Tab content 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </Tab>
+              <Tab tabTitle="Third Tab" tabTemplate={PillsTabTemplate}>
+                <h3>Tab content 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </Tab>
             </Tablist>
           </section>
