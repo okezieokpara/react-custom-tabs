@@ -16,15 +16,15 @@ class Tab extends Component {
     }
   }
   render() {
-    if (this.props.tabTemplate) {
-      return React.createElement(this.props.tabTemplate, {...this.props, onClick: this.handleTabClick});
+    if (this.props.template) {
+      return React.createElement(this.props.template, {...this.props, onClick: this.handleTabClick});
     }
     return (
       <DefaultTab {...this.props} onClick={this.handleTabClick}/>
     );
   }
   static propTypes = {
-    tabTemplate: PropTypes.node,
+    template: PropTypes.node,
     onClick: PropTypes.func,
     onActivate: PropTypes.func,
     tabIndex: PropTypes.number,
