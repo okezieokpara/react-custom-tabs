@@ -1,6 +1,8 @@
 react-custom-tabs
 =================
 
+[![Build Status](https://travis-ci.org/okezieokpara/react-custom-tabs.svg?branch=master)](https://travis-ci.org/okezieokpara/react-custom-tabs)
+
 Install
 -------
 
